@@ -5,3 +5,10 @@ body {
   padding: 2rem 1.5rem;
   text-align: center;
 }
+.icon-red {
+  filter: invert(0.3) sepia(1) saturate(10) hue-rotate(-20deg);
+}
+
+.icon-green {
+  filter: invert(.5) sepia(1) saturate(5) hue-rotate(65deg);
+}
