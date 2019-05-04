@@ -1,10 +1,40 @@
 body {
   padding-top: 2rem;
+  background-color: #eee;
 }
 .header {
   padding: 2rem 1.5rem;
   text-align: center;
 }
+.products {
+  background-color: white;
+  box-shadow: 2px 2px 2px #ddd;
+  border-radius: 3px;
+}
+.products tr {
+  padding-left: 1em;
+}
+
+.products th {
+  text-transform: uppercase;
+}
+
+.products th {
+  padding-left: 0.5em;
+}
+.products a {
+  color: #2752d0;
+}
+
+.wrapper {
+  padding: 1em;
+}
+
+img.icon {
+  width: 16px;
+  height: 16px;
+}
+
 .icon-red {
   filter: invert(0.3) sepia(1) saturate(10) hue-rotate(-20deg);
 }
