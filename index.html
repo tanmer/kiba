@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/stylesheets/stylesheet.css?v=3">
+    <link rel="stylesheet" href="/stylesheets/stylesheet.css?v=5">
     <title>Kiba 牙</title>
   </head>
   <body>
@@ -13,32 +13,79 @@
         <h1>牙 Kiba</h1>
         <h2>Data processing & ETL framework for Ruby</h2>
       </div>
-      <table class="table">
-        <thead>
-          <tr>
-            <th></th>
-            <th><img src="/octicons/mark-github.svg"/> OSS</th>
-            <th>Pro</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Streaming Runner</th>
-            <td><img src="/octicons/check.svg"/></td>
-            <td><img src="/octicons/check.svg"/></td>
-          </tr>
-          <tr>
-            <th>Parallel Transform</th>
-            <td><img src="/octicons/x.svg"/></td>
-            <td><img src="/octicons/check.svg"/></td>
-          </tr>
-          <tr>
-            <th>Data Profiler</th>
-            <td><img src="/octicons/x.svg"/></td>
-            <td>(soon)</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="wrapper">
+        <table class="table products">
+          <thead>
+            <tr>
+              <th></th>
+              <th><img src="/octicons/mark-github.svg"/> OSS</th>
+              <th>Pro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>ETL job definition DSL</a></th>
+              <td><img class="icon-green" src="/octicons/check.svg"/></td>
+              <td><img class="icon-green" src="/octicons/check.svg"/></td>
+            </tr>
+            <tr>
+              <th><a href="https://github.com/thbar/kiba/wiki/How-to-yield-more-than-one-output-row-per-input-row-in-a-transform%3F">Streaming Runner engine</a></th>
+              <td><img class="icon-green" src="/octicons/check.svg"/></td>
+              <td><img class="icon-green" src="/octicons/check.svg"/></td>
+            </tr>
+            <tr>
+              <th>Run from Cron (Rake task)</a></th>
+              <td><img class="icon-green" src="/octicons/check.svg"/></td>
+              <td><img class="icon-green" src="/octicons/check.svg"/></td>
+            </tr>
+            <tr>
+              <th>Run from background jobs</a></th>
+              <td><img class="icon-green" src="/octicons/check.svg"/></td>
+              <td><img class="icon-green" src="/octicons/check.svg"/></td>
+            </tr>
+            <tr>
+              <th><a href="https://github.com/thbar/kiba/wiki/Considerations-for-running-Kiba-jobs-programmatically-%28from-Sidekiq%2C-Faktory%2C-Rake%2C-...%29">Cron triggering</a></th>
+              <td><img class="icon-green" src="/octicons/check.svg"/></td>
+              <td><img class="icon-green" src="/octicons/check.svg"/></td>
+            </tr>
+            <tr>
+              <th><a href="https://github.com/thbar/kiba/wiki/SQL-Source">SQL Source</a></th>
+              <td><img class="icon-red" src="/octicons/x.svg"/></td>
+              <td><img class="icon-green" src="/octicons/check.svg"/></td>
+            </tr>
+            <tr>
+              <th><a href="https://github.com/thbar/kiba/wiki/SQL-Upsert-Destination">SQL Upsert Destination</a></th>
+              <td><img class="icon-red" src="/octicons/x.svg"/></td>
+              <td><img class="icon-green" src="/octicons/check.svg"/></td>
+            </tr>
+            <tr>
+              <th><a href="https://github.com/thbar/kiba/wiki/SQL-Bulk-Insert-Destination">SQL Bulk Insert Destination</a></th>
+              <td><img class="icon-red" src="/octicons/x.svg"/></td>
+              <td><img class="icon-green" src="/octicons/check.svg"/></td>
+            </tr>
+            <tr>
+              <th>Amazon S3 integration</th>
+              <td><img class="icon-red" src="/octicons/x.svg"/></td>
+              <td><span class="text-muted">soon</span></td>
+            </tr>
+            <tr>
+              <th>HTTP paginating source</th>
+              <td><img class="icon-red" src="/octicons/x.svg"/></td>
+              <td><span class="text-muted">soon</span></td>
+            </tr>
+            <tr>
+              <th>Parallel transform</th>
+              <td><img class="icon-red" src="/octicons/x.svg"/></td>
+              <td><span class="text-muted">soon</span></td>
+            </tr>
+            <tr>
+              <th>Data Profiling</th>
+              <td><img class="icon-red" src="/octicons/x.svg"/></td>
+              <td><span class="text-muted">soon</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
   </body>
 </html>
