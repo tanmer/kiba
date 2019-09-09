@@ -1,9 +1,10 @@
 # encoding: utf-8
 require 'kiba/version'
 
+require 'kiba/register'
+require 'kiba/checkpoint'
 require 'kiba/control'
 require 'kiba/context'
-require 'kiba/register'
 require 'kiba/parser'
 require 'kiba/runner'
 require 'kiba/streaming_runner'

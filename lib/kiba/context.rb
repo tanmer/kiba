@@ -1,7 +1,10 @@
 module Kiba
   class Context
+    include Kiba::Checkpoint
+
     def initialize(control)
       @control = control
+      control.context = self
     end
 
     def pre_process(&block)

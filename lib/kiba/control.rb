@@ -1,9 +1,14 @@
+require 'forwardable'
 module Kiba
   class Control
+    extend Forwardable
+    attr_accessor :context
+    def_delegator :context, :checkpoints
+
     def pre_processes
       @pre_processes ||= []
     end
-    
+
     def config
       @config ||= {}
     end
