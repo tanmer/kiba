@@ -5,6 +5,7 @@ module Kiba
     # allow to handle a block form just like a regular transform
     class AliasingProc < Proc
       alias_method :process, :call
+      alias_method :write, :call
     end
 
     def run(control)
@@ -15,7 +16,7 @@ module Kiba
       process_rows(
         to_instances(control.sources),
         to_instances(control.transforms, true),
-        destinations = to_instances(control.destinations)
+        destinations = to_instances(control.destinations, true)
       )
       close_destinations(destinations)
       # TODO: when I add post processes as class, I'll have to add a test to
